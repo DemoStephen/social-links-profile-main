@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+@font-face {
+  font-family: "InterBold";
+  src: url("./assets/fonts/static/Inter-Bold.ttf");
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey700: hsl(0, 0%, 20%);
+  --Grey800: hsl(0, 0%, 12%);
+  --Grey900: hsl(0, 0%, 8%);
+}
+body {
+  font-size: 0.875rem;
+  min-height: 100vh;
+  background-color: var(--Grey900);
+  justify-content: center;
+  color: var(--White);
+}
+main {
+  width: clamp(24rem, calc(100% - 40px), 26rem);
+  padding: 1.5rem;
+  background-color: var(--Grey800);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+header img {
+  border-radius: 50%;
+  width: 9rem;
+  margin: 0 0 1rem 0;
+}
+header h1 {
+  margin: 1rem 0 0.5rem 0;
+}
+header p {
+  color: var(--Green);
+}
+.role {
+  margin: 1.75rem 0 0 0;
+}
+.btnContainer {
+  margin: 1.75rem 0 0 0;
+}
+button {
+  padding: 0.85rem;
+  border-radius: 0.45rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  margin: 0.35rem 0;
+  background-color: var(--Grey700);
+  color: var(--White);
+  transition: 0.35s;
+  font-family: "InterBold";
+}
+button:hover {
+  background-color: var(--Green);
+  color: var(--Grey900);
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 0.7rem 0 0 0;
+}
+a {
+  color: var(--White);
+}
+@media (max-width: 31.25rem) {
+  main {
+    width: 90%;
+    padding: 1rem;
+  }
+}
